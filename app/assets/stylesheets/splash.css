@@ -1,0 +1,9 @@
+.splash-container {
+    display: block;
+    text-align: center;
+    background-image: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 100%),
+        url("/assets/splash-bg.jpg");
+    height: 700px;
+    background-size: cover;
+}
