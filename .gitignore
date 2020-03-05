@@ -6,11 +6,12 @@ bundle.js.map
 # config/initializers/secret_token.rb
 config/master.key
 config/initializers/secret_token.rb
+/yarn-error.log/public/assets
 
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
-!/log/.keep
+/log/.keep
 !/tmp/.keep
 
 ## Environment normalization:
@@ -30,3 +31,6 @@ config/initializers/secret_token.rb
 /public/packs-test
 /public/assets
 /tmp
+
+.DS_Store
+npm-debug.log
