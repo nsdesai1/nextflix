@@ -16,16 +16,13 @@ import NavbarContainer from './navbar/navbar_container'
 
 const App = () => (
   <div>
-    <header id='navbar'>
+    {/* <header id='navbar'>
       <AuthRoute path="/" component={NavbarContainer}/>
-      {/* <Link to='/' className='header-link'>
-        <h1>Nextflix</h1>
-      </Link> */}
-    </header>
+    </header> */}
     <Switch>
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-      <AuthRoute path='/' component={SplashContainer} />
+      <Route path='/' component={SplashContainer} />
     </Switch>
   </div>
 );

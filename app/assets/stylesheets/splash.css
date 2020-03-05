@@ -1,9 +1,89 @@
-.splash-container {
-    display: block;
-    text-align: center;
-    background-image: 
+/* .splash-container { */
+    /* display: flex;
+    text-align: center; */
+    /* background-image: 
         linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 100%),
-        url("/assets/splash-bg.jpg");
-    height: 700px;
+        url("/assets/splash-bg.jpg"); */
+    /* background-color: black;
     background-size: cover;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+main {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .splash-gradient {
+    background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 100%);
+} */
+
+#bg-image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.splash-box {
+    display: inline-block;
+    position: absolute;
+}
+
+ .splash-box {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    height: 200px;
+    width: 600px;
+}
+
+.splash-main-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 55px;
+    max-width: 640px;
+}
+
+.splash-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 400px;
+    max-width: 640px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.splash-subtext {
+    font: inherit;
+}
+
+.splash-signup-btn {
+    align-items: center;
+    min-height: 40px;
+    color: #fff;
+    background-color: #e50914;
+    background-image: linear-gradient(to bottom, #e50914, #db0510);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .1px;
+    font-size: 16px;
+    font-stretch: 100%;
+    border-style: none;
+    height: 60px;
+} 
+
+.form-input {
+    height: 60px;
+    width: 200px;
+    margin: 10px;
 }
