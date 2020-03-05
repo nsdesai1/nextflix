@@ -13,7 +13,6 @@ config/initializers/secret_token.rb
 /tmp/*
 /log/.keep
 !/tmp/.keep
-
 ## Environment normalization:
 /.bundle
 /vendor/bundle
