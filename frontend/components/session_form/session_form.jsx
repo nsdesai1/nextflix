@@ -41,13 +41,16 @@ class SessionForm extends React.Component {
           return (
             <div>
               <form onSubmit={this.handleSubmit}>
-                <input className="form-field" placeholder="Email Address" type="text" 
+                <input className="form-field" id="field-1" placeholder="Email Address" type="text" 
                 value={this.state.email} onChange={this.update("email")}/>
-                <input className="form-field" placeholder="Passwored" type="password"
+                <input className="form-field" placeholder="Password" type="password"
                 value={this.state.password} onChange={this.update("password")}/>
                 <br/>
-                {/* <input type="submit" className="splash-signup-btn" value={"TRY 30 DAYS FREE"}/> */}
-                <button className="splash-signup-btn" onClick={this.handleSubmit}>TRY 30 DAYS FREE</button>
+                <div class="input-group">
+                  {/* <input type="submit" className="splash-signup-btn" value={"TRY 30 DAYS FREE"} >
+                  <span class="input-group-arrow"> <i  class="fas fa-chevron-right"></i> </span> </input> */}
+                  <button onClick={this.handleSubmit} className="splash-signup-btn" > TRY 30 DAYS FREE <span class="input-arrow"> <i  class="fas fa-chevron-right"></i> </span> </button>
+                </div>
               </form>
             </div>
           )
@@ -56,12 +59,15 @@ class SessionForm extends React.Component {
               <div>
                   <h2>Login</h2>
                   <form>
+                    <div className="signup-box">
                       <label>Email:
                           <input type="text" value={this.state.email} onChange={this.update("email")} />
                       </label>
                       <label>Password:
                           <input type="password" value={this.state.password} onChange={this.update("password")} />
                       </label>
+                    </div>
+                      
                       <button onClick={this.handleSubmit}>Log In</button>
                   </form>
                   <Link to="/signup">New user? Sign up here</Link>

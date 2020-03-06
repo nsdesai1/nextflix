@@ -39,11 +39,43 @@ class Splash extends React.Component {
     render() {
         return (
             <main>
-                <img id="bg-image" src="/assets/splash-bg.jpg"/>
-                {/* <nav className="navbar">
-                    <NavBarContainer />
+                {/* <nav>
+                        <button className='splash-demo' onClick={this.handleDemo}>Try the demo!</button>
                 </nav> */}
-                <section className="splash-box">
+                
+                <div className="splash-center">
+                    <div id='bg-image'></div>
+
+                    <section className="splash-box">
+                        <h1 className='splash-main-text'>
+                            Unlimited movies, TV 
+                        </h1>
+                        <h1 className='splash-main-text'>
+                            shows, and more.
+                        </h1>
+                        <h2 className='splash-text'>
+                            Watch anywhere. Cancel anytime.
+                        </h2>
+                        <div className='splash-form'>
+                            <div className='black-box'>
+                                <div className='splash-fields'>
+                                    <h3 className='splash-subtext'>
+                                        Ready to watch? Enter your email and password to signup or restart your membership.
+                                    </h3>
+                                    <SignupFormContainer />
+                                </div>
+                            </div>
+                        </div>
+                    </section> 
+                </div> 
+            </main>
+        )
+    }
+}
+
+export default Splash;
+
+{/* <section className="splash-box">
                     <h1 className='splash-main-text'>
                          Unlimited movies, TV shows, and more.
                      </h1>
@@ -57,10 +89,9 @@ class Splash extends React.Component {
                         Ready to watch? Enter your email and password to signup or 
                         <button className='splash-demo' onClick={this.handleDemo}>try the demo!</button>
                     </h3>
-                </section>
-            </main>
+                </section> */}
 
-            // <div className='splash-container'>
+// <div className='splash-container'>
             //     <div className='splash-image'>
             //         <img id="bg-image" src="/assets/splash-bg.jpg" alt="" />
             //     </div>
@@ -87,14 +118,9 @@ class Splash extends React.Component {
             //             </Link> */}
             //             <SignupFormContainer />
             //         </div>
-                    // <h3 className='splash-subtext'>
-                    //     Ready to watch? Enter your email and password to signup or 
-                    //     <button className='splash-demo' onClick={this.handleDemo}>try the demo!</button>
-                    // </h3>
+            //         <h3 className='splash-subtext'>
+            //             Ready to watch? Enter your email and password to signup or 
+            //             <button className='splash-demo' onClick={this.handleDemo}>try the demo!</button>
+            //         </h3>
             //     </div>
             // </div>
-        )
-    }
-}
-
-export default Splash;
