@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -46,32 +47,45 @@ class SessionForm extends React.Component {
                 <input className="form-field" placeholder="Password" type="password"
                 value={this.state.password} onChange={this.update("password")}/>
                 <br/>
-                <div class="input-group">
+                <div className="input-group">
                   {/* <input type="submit" className="splash-signup-btn" value={"TRY 30 DAYS FREE"} >
                   <span class="input-group-arrow"> <i  class="fas fa-chevron-right"></i> </span> </input> */}
-                  <button onClick={this.handleSubmit} className="splash-signup-btn" > TRY 30 DAYS FREE <span class="input-arrow"> <i  class="fas fa-chevron-right"></i> </span> </button>
+                  <button onClick={this.handleSubmit} className="splash-signup-btn" > TRY 30 DAYS FREE <span className="input-arrow"> <i  className="fas fa-chevron-right"></i> </span> </button>
                 </div>
               </form>
             </div>
           )
         } else {
           return (
-              <div>
-                  <h2>Login</h2>
-                  <form>
-                    <div className="signup-box">
-                      <label>Email:
-                          <input type="text" value={this.state.email} onChange={this.update("email")} />
-                      </label>
-                      <label>Password:
-                          <input type="password" value={this.state.password} onChange={this.update("password")} />
-                      </label>
-                    </div>
-                      
-                      <button onClick={this.handleSubmit}>Log In</button>
-                  </form>
-                  <Link to="/signup">New user? Sign up here</Link>
+            <main>
+              <nav className="login-nav">
+                <Link to="/" className="">
+                  <div id="logo"></div>
+                </Link>
+              </nav>
+              <div className="login-container">
+                  <div id="login-image"></div>
+                  <div className="login-box">
+                      <div className="login-content">
+                        <h2 className="login-header">Sign In</h2>
+                        <form onSubmit={this.handleSubmit} className="login-form">
+                            <label >
+                                <input className="login-field" type="text" value={this.state.email} placeholder="Email" onChange={this.update("email")} />
+                            </label>
+                            <label>
+                                <input className="login-field" type="password" value={this.state.password} placeholder="Password" onChange={this.update("password")} />
+                            </label>
+                            
+                          <button onClick={this.handleSubmit} className="login-btn">Sign In</button>
+                        </form>
+                        <div className="login-footer">
+                            <span className="signup-span">New to Nextflix? </span>
+                            <Link className="signup-link" to="/">Sign up now.</Link>
+                        </div>
+                      </div>
+                  </div>
               </div>
+            </main>
           )
       }
     }

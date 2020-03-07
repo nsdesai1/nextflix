@@ -23,6 +23,7 @@
 
 #bg-image {
     background-image: image-url("splash-bg.jpg");
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     opacity: 0.4;
@@ -36,7 +37,7 @@
 .splash-main-text {
     font-size: 60px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .splash-text {
@@ -98,11 +99,80 @@
     margin-left: 10px;
 }
 
-.input-arrow {
-    padding-left: 5px;
-}
-
 .svg-inline--fa {
     height: 0.80em;
 }
 
+
+// NAV SECTION
+
+.splash-nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav-left {
+    display: inline-block;
+    width: 50%;
+    
+}
+
+#nav-right {
+    display: inline-block;
+    width: 50%;
+}
+
+#logo {
+    background-image: image-url("nextflix-resized2.png");
+    height: 150px;
+    width: 300px;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.splash-login-btn {
+    // align-items: center;
+    position: relative;
+    top: 15px;
+    left: 80%;
+
+    color: #fff;
+    background-color: #e50914;
+    background-image: linear-gradient(to bottom, #e50914, #db0510);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .1px;
+    font-size: 14px;
+    font-stretch: 100%;
+    border-style: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 2px;
+} 
+
+.splash-demo-btn {
+    // align-items: center;
+    position: relative;
+    top: -15px;
+    left: 63%;
+
+    color: #fff;
+    background-color: #e50914;
+    background-image: linear-gradient(to bottom, #e50914, #db0510);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .1px;
+    font-size: 14px;
+    font-stretch: 100%;
+    border-style: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 2px;
+} 

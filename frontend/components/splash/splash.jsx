@@ -39,11 +39,25 @@ class Splash extends React.Component {
     render() {
         return (
             <main>
-                {/* <nav>
-                        <button className='splash-demo' onClick={this.handleDemo}>Try the demo!</button>
-                </nav> */}
+                <nav className="splash-nav">
+                    <div id="nav-left">
+                        <div id="logo"></div>
+                    </div>
+                    <div id="nav-right">
+                        <div id="nav-login">
+                            <Link to="/login" className="login-link"> 
+                                <button className="splash-login-btn"> Sign In </button>
+                            </Link>
+                        </div>
+                        <div id="nav-demo">
+                                <button className='splash-demo-btn' onClick={this.handleDemo}>Demo User</button>
+                        </div>
+                    </div>
+                </nav>
                 
                 <div className="splash-center">
+                    
+
                     <div id='bg-image'></div>
 
                     <section className="splash-box">

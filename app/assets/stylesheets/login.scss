@@ -1,0 +1,101 @@
+.login-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#login-image {
+    background-image: image-url("splash-bg.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.4;
+}
+
+.login-box {
+    display: inline-block;
+    position: absolute;
+}
+
+.login-header {
+    font-size: 29px;
+    font-weight: bold;
+    margin: 30px 0px 30px 0px;
+}
+
+.login-box {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 600px;
+    position: absolute;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-content {
+    padding: 50px;
+}
+
+.login-footer {
+    margin-top: 50px;
+}
+
+.signup-span {
+    color: grey;
+}
+
+.signup-link {
+    color: white;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+.login-field {
+    background-color: #333;
+    width: 300px;
+    height: 50px;
+    border-style: none;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.login-btn {
+    align-items: center;
+    min-height: 40px;
+    color: #fff;
+    background-color: #e50914;
+    background-image: linear-gradient(to bottom, #e50914, #db0510);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .1px;
+    font-size: 19px;
+    font-stretch: 100%;
+    border-style: none;
+    height: 50px;
+    width: 320px;
+    border-radius: 2px;
+    margin-top: 27px;
+}
+
+.login-nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
