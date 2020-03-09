@@ -6,7 +6,9 @@ class Browse extends React.Component {
     }
 
     render() {
-        <h1>Browse page!</h1>
+        return(
+            <h1>Browse page!</h1>
+        )
     }
 }
 
