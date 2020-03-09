@@ -1,0 +1,90 @@
+#browse-logo {
+    background-image: image-url("browse-logo.png");
+    height: 50px;
+    width: 160px;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    margin-top: 15px;
+    // border: 1px solid white;
+}
+
+.browse-bg {
+    background-color: #141414;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar-header {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logout-btn {
+    position: absolute;
+    margin-top: 15px;
+    left: 90%;
+    align-items: center;
+    min-height: 40px;
+    color: #fff;
+    background-color: #e50914;
+    background-image: linear-gradient(to bottom, #e50914, #db0510);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .1px;
+    font-size: 14px;
+    font-stretch: 100%;
+    border-style: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+.nav-left {
+    display: flex;
+    width: 50%;
+    
+}
+
+.nav-right {
+    display: flex;
+    width: 50%;
+}
+
+.home-text {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    margin-top: 30px;
+}
+
+.nav-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: rgb(133, 132, 132);
+    text-decoration: none;
+}
+
+.movies-text {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    margin-top: 30px;
+}
+.list-text {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    margin-top: 30px;
+}
