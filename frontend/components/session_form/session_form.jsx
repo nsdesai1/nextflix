@@ -75,7 +75,6 @@ class SessionForm extends React.Component {
                             <label>
                                 <input className="login-field" type="password" value={this.state.password} placeholder="Password" onChange={this.update("password")} />
                             </label>
-                            
                           <button onClick={this.handleSubmit} className="login-btn">Sign In</button>
                         </form>
                         <div className="login-footer">
