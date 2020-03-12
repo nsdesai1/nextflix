@@ -21,13 +21,13 @@ class NavBar extends React.Component {
                         <div id="browse-logo"></div>
                     </Link>
                     <Link to="/browse" className="nav-link">
-                        <h3 className="home-text">Home</h3>
+                        <h3 className="nav-text" id="home-text">Home</h3>
                     </Link>
                     <Link to="/browse" className="nav-link">
-                        <h3 className="movies-text">Movies</h3>
+                        <h3 className="nav-text" id="movies-text">Movies</h3>
                     </Link>
                     <Link to="/browse" className="nav-link">
-                        <h3 className="list-text">My List</h3>
+                        <h3 className="nav-text" id="list-text">My List</h3>
                     </Link>
                 </div>
                 <div className="nav-right">

@@ -1,0 +1,47 @@
+.browse {
+    color: white;
+    text-decoration: none;
+}
+
+.row-container {
+    display: flex;
+    align-items: center;
+}
+
+.video-row {
+    position: absolute;
+    display: flex;
+    top: 77%;
+    background-color: black;
+    width: 100%;
+    height: 250px;
+}
+
+.mv-player {
+    position: absolute;
+    display: flex;
+    top: -15%;
+    // left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    // height: 100%;
+    // background-color: green;
+}
+
+
+
+// .video-item {
+//     width: 220px;
+//     position: relative;
+//     display: inline-block;
+//     align-items: center;
+//     // background-color: blue;
+//     color: white;
+//     height: 250px;
+    
+//     margin: 30px;
+// }
+
+// .video-container {
+//     background-color: blue;
+// }

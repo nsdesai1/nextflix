@@ -1,0 +1,33 @@
+.video-player {
+    height: 150px;
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.video-thumbnail {
+    position: absolute;
+    height: 150px;
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.video-player:hover {
+    animation: zoom 1s ease 0s normal both running;
+}
+
+.play-video img {
+    visibility: hidden;
+}
+
+@keyframes zoom {
+    from {
+        height: 150px;
+        width: 250px;
+    }
+    to {
+        height: 220px;
+        width: 320px;
+    }
+}
