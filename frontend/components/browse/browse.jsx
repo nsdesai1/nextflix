@@ -14,7 +14,7 @@ class Browse extends React.Component {
     render() {
         const listItems1 = this.props.videos.slice(0, 4)
         const listItems2 = this.props.videos.slice(4, 9)
-        const listItems3 = this.props.videos.slice(9, )
+        const listItems3 = this.props.videos.slice(9, 15)
 
         if (!this.props.videos[0]) {
             return null;
@@ -48,6 +48,9 @@ class Browse extends React.Component {
                     </div>
                     <div className="video-row2">
                         <VideoListContainer className="video-container" vids={listItems2} genre={"Comedy"} />
+                    </div>
+                    <div className="video-row3">
+                        <VideoListContainer className="video-container" vids={listItems3} genre={"Popular"} />
                     </div>
                     <footer></footer>
                 </main>

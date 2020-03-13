@@ -48,40 +48,38 @@ video8 = Video.create({title: "The Wolf of Wall Street", description: "From the 
     video8.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/wolf_of_wall_street.mp4"), filename:"wolf_of_wall_street.mp4")
     video8.thumbnail.attach(io:open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/wolf_of_wall_street.jpg"), filename:"wolf_of_wall_street.jpg")
 
+video9 = Video.create({title: "Spider-Man: Into The Spider-Verse", description: "Teen Miles Morales becomes Spider-Man of his reality, crossing his path with five counterparts from other dimensions to stop a threat for all realities.", media_type: "movie", duration: "1h 57m", rating: "PG", year: "2018"})
+    video9.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/spiderman_into_the_spiderverse.mp4"), filename:"spiderman_into_the_spiderverse.mp4")
+    video9.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/spiderman_into_the_spiderverse.jpg"), filename: "spiderman_into_the_spiderverse.jpg")
 
 
-# video5 = Video.create({title: "Avengers: Endgame", description: "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.", media_type: "movie", duration: "3h 02m", rating: "PG-13", year: "2019"})
-#     video5.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/avengers_endgame.mp4"), filename: "avengers_endgame.mp4")
-#     video5.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/avengers_endgame.jpg"), filename:"avengers_endgame.jpg")
+
+
+video10 = Video.create({title: "John Wick", description: "An ex-hit-man comes out of retirement to track down the gangsters that killed his dog and took everything from him.", media_type: "movie", duration: "1h 41m", rating: "R", year: "2014"})
+    video10.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/john_wick.mp4"), filename: "john_wick.mp4")
+    video10.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/john_wick.jpg"), filename: "john_wick.jpg")
+
+video11 = Video.create({title: "Moonlight", description: "A young African-American man grapples with his identity and sexuality while experiencing the everyday struggles of childhood, adolescence, and burgeoning adulthood.", media_type: "movie", duration: "1h 51m", rating: "R", year: "2016"})
+    video11.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/moonlight.mp4"), filename:"moonlight.mp4")
+    video11.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/moonlight.png"), filename:"moonlight.png")
+
+video12 = Video.create({title: "Get Out", description: "A young African-American visits his white girlfriend's parents for the weekend, where his simmering uneasiness about their reception of him eventually reaches a boiling point.", media_type: "movie", duration: "1h 44m", rating: "R", year: "2017"})
+    video12.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/get_out.mp4"), filename:"get_out.mp4")
+    video12.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/get_out.png"), filename: "get_out.png")
+
+video13 = Video.create({title: "Avengers: Endgame", description: "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.", media_type: "movie", duration: "3h 02m", rating: "PG-13", year: "2019"})
+    video13.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/avengers_endgame.mp4"), filename: "avengers_endgame.mp4")
+    video13.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/avengers_endgame.jpg"), filename:"avengers_endgame.jpg")
+
+video14 = Video.create({title: "Whiplash", description: "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.", media_type: "movie", duration: "1h 46m", rating: "R", year: "2014"})
+    video14.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/whiplash.mp4"), filename: "whiplash.mp4")
+    video14.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/whiplash.jpg"), filename: "whiplash.jpg")
+
+
+
 
 # video6 = Video.create({title: "Spider-Man: Homecoming", description: "Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City.", media_type: "movie", duration: "2h 13m", rating: "PG-13", year: "2017"})
 #     video6.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/spiderman_homecoming.mp4"), filename: "spiderman_homecoming.mp4")
 #     video6.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/spiderman_homecoming.jpg"), filename: "spiderman_homecoming.jpg")
-
-# video7 = Video.create({title: "John Wick", description: "An ex-hit-man comes out of retirement to track down the gangsters that killed his dog and took everything from him.", media_type: "movie", duration: "1h 41m", rating: "R", year: "2014"})
-#     video7.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/john_wick.mp4"), filename: "john_wick.mp4")
-#     video7.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/john_wick.jpg"), filename: "john_wick.jpg")
-
-
-    
-# video9 = Video.create({title: "Whiplash", description: "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.", media_type: "movie", duration: "1h 46m", rating: "R", year: "2014"})
-#     video9.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/whiplash.mp4"), filename: "whiplash.mp4")
-#     video9.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/whiplash.jpg"), filename: "whiplash.jpg")
-    
-
-
-# video11 = Video.create({title: "Spider-Man: Into The Spider-Verse", description: "Teen Miles Morales becomes Spider-Man of his reality, crossing his path with five counterparts from other dimensions to stop a threat for all realities.", media_type: "movie", duration: "1h 57m", rating: "PG", year: "2018"})
-#     video11.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/spiderman_into_the_spiderverse.mp4"), filename:"spiderman_into_the_spiderverse.mp4")
-#     video11.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/spiderman_into_the_spiderverse.jpg"), filename: "spiderman_into_thi_spiderverse.jpg")
-
-# video12 = Video.create({title: "Get Out", description: "A young African-American visits his white girlfriend's parents for the weekend, where his simmering uneasiness about their reception of him eventually reaches a boiling point.", media_type: "movie", duration: "1h 44m", rating: "R", year: "2017"})
-#     video12.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/get_out.mp4"), filename:"get_out.mp4")
-#     video12.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/get_out.png"), filename: "get_out.png")
-
-# video13 = Video.create({title: "Moonlight", description: "A young African-American man grapples with his identity and sexuality while experiencing the everyday struggles of childhood, adolescence, and burgeoning adulthood.", media_type: "movie", duration: "1h 51m", rating: "R", year: "2016"})
-#     video13.trailer.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/moonlight.mp4"), filename:"moonlight.mp4")
-#     video13.thumbnail.attach(io: open("https://nextflix-seeds.s3-us-west-1.amazonaws.com/moonlight.png"), filename:"moonlight.png")
-
-
 
 
