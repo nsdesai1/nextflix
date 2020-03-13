@@ -1,3 +1,7 @@
+.video-item {
+    position: relative;
+}
+
 .video-player {
     height: 150px;
     width: 250px;
@@ -20,6 +24,45 @@
 .play-video img {
     visibility: hidden;
 }
+
+// .video-info {
+//     // visibility: hidden;
+//     position: relative;
+    
+//     height: 150px;
+//     width: 250px;
+//     // margin-left: 30px;
+//     // margin-top: 30px;
+// }
+
+.video-item {
+    position: relative;
+}
+
+// .video-info {
+//     visibility: hidden;
+// }
+
+// .play-video div {
+// //   background: rgba(0,0,0,0);
+//   visibility: visible;
+//   color: white;
+//   font-family: Arial, Helvetica, sans-serif;
+//   position: absolute;
+//   top: 60px; right: 0; bottom: 0; left: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .play-video div {
+//     visibility: visible;
+
+// }
+
+// .play-video .video-info{
+//     visibility: visible;
+// }
 
 @keyframes zoom {
     from {

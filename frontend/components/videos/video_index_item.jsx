@@ -29,16 +29,7 @@ class VideoIndexItem extends React.Component {
     render() {
         return (
             <div >
-                <ul className="video-item" onMouseEnter={this.hideThumbnail} onMouseLeave={this.showThumbnail}>
-                    {/* <li>{this.props.title}</li>
-                    <br/>
-                    <li>{this.props.description}</li>
-                    <br/>
-                    <li>{this.props.media_type}</li>
-                    <br/>
-                    <li>{this.props.duration}</li>
-                    <li>{this.props.rating}</li>
-                    <li>{this.props.year}</li> */}
+                <div className="video-item" onMouseEnter={this.hideThumbnail} onMouseLeave={this.showThumbnail}>
                     <img 
                         src={this.props.thumbnail} 
                         className="video-thumbnail"
@@ -51,9 +42,13 @@ class VideoIndexItem extends React.Component {
                         onMouseEnter={this.playVideo} 
                         onMouseLeave={this.pauseVideo} 
                         src={this.props.trailer} 
-                    /> 
-                    {/* <li>{this.props.trailer}</li> */}
-                </ul>
+                    />
+                    {/* <div className="video-info">
+                        {this.props.title}
+                        <br/>
+                        {this.props.rating}, {this.props.duration}
+                    </div> */}
+                </div>
             </div>
         )
     }

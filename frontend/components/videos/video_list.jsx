@@ -9,10 +9,10 @@ class VideoList extends React.Component {
     render() {
         return (
             <div>
-                <h2 className="genre-title">Genre Title</h2>
+                <h2 className="genre-title">{this.props.genre}</h2>
                 <section className="row-container">
                     {
-                        this.props.vids.slice(1).map(video => {
+                        this.props.vids.map(video => {
                             return (
                                 <VideoIndexItemContainer 
                                     key={video.id}
