@@ -5,7 +5,3 @@
 
 Nextflix is a clone of Netflix, the widely popular application used for video browsing and streaming. Similar to Netflix, Nextflix allows users that have registered an account to stream videos (in this case, trailers) for the various titles hosted on the site. The app was made using Ruby on Rails on the backend, PostgreSQL for the backend database, React/Redux for the frontend, and Amazon AWS S3 for cloud storage of image and video files. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-
