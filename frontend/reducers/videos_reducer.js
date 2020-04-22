@@ -7,8 +7,10 @@ const videosReducer = ( state = {}, action ) => {
         case RECEIVE_VIDEOS:
             return action.videos;
         case RECEIVE_VIDEO:
-            const newVideo = { [action.video.id]: action.video }
-            return Object.assign({}, newVideo)
+            const newVideo = { [action.video.id]: action.video };
+            return Object.assign({}, newVideo);
+        case CLEAR_VIDEOS:
+            return {};
         case LOGOUT_CURRENT_USER: 
             return {};
         default:
