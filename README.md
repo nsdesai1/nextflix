@@ -1,4 +1,4 @@
-# README
+# Nextflix
 
 [Live site!](https://nextflix-aa.herokuapp.com/)
 
