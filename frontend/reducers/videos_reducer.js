@@ -1,4 +1,4 @@
-import { RECEIVE_VIDEOS, RECEIVE_VIDEO } from "../actions/video_actions";
+import { RECEIVE_VIDEOS, RECEIVE_VIDEO, CLEAR_VIDEOS } from "../actions/video_actions";
 import { LOGOUT_CURRENT_USER } from "../actions/session_actions";
 
 const videosReducer = ( state = {}, action ) => {
