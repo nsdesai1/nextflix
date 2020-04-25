@@ -2,12 +2,13 @@ import { RECEIVE_VIDEOS, RECEIVE_VIDEO, CLEAR_VIDEOS } from "../actions/video_ac
 import { LOGOUT_CURRENT_USER } from "../actions/session_actions";
 
 const videosReducer = ( state = {}, action ) => {
-    Object.freeze(state);
+    Object.freeze(action);
+
     switch (action.type) {
         case RECEIVE_VIDEOS:
-            return action.videos;
+            return action.payload;
         case RECEIVE_VIDEO:
-            const newVideo = { [action.video.id]: action.video };
+            const newVideo = { [action.payload.video.id]: action.payload.video };
             return Object.assign({}, newVideo);
         case CLEAR_VIDEOS:
             return {};

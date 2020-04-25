@@ -4,14 +4,14 @@ export const RECEIVE_VIDEOS = 'RECEIVE_VIDEOS';
 export const RECEIVE_VIDEO = 'RECEIVE_VIDEO';
 export const CLEAR_VIDEOS = 'CLEAR_VIDEOS';
 
-export const receiveVideos = videos => ({
+export const receiveVideos = payload => ({
     type: RECEIVE_VIDEOS,
-    videos
+    payload
 });
 
-export const receiveVideo = video => ({
+export const receiveVideo = payload => ({
     type: RECEIVE_VIDEO,
-    video
+    payload
 });
 
 export const clearVideos = () => ({
@@ -20,10 +20,10 @@ export const clearVideos = () => ({
 
 export const fetchVideos = () => dispatch => (
     VideoAPIUtil.fetchVideos()
-    .then(videos => dispatch(receiveVideos(videos)))
+    .then(payload => dispatch(receiveVideos(payload)))
 );
 
-export const fetchVideo = id => dispatch => (
+export const fetchVideo = (id) => dispatch => (
     VideoAPIUtil.fetchVideo(id)
-    .then(video => dispatch(receiveVideo(video)))
+    .then(payload => dispatch(receiveVideo(payload)))
 );
