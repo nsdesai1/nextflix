@@ -1,13 +1,14 @@
 import {connect} from 'react-redux';
+import { fetchVideos, clearVideos } from '../../actions/video_actions';
 import Browse from './browse';
-import { fetchVideos } from '../../actions/video_actions';
 
-const mSTP = state => ({
+const msp = state => ({
     videos: Object.values(state.entities.videos)
 })
 
-const mDTP = dispatch => ({
-    fetchVideos: () => dispatch(fetchVideos())
+const mdp = dispatch => ({
+    fetchVideos: () => dispatch(fetchVideos()),
+    clearVideos: () => dispatch(clearVideos())
 })
 
-export default connect(mSTP, mDTP)(Browse);
+export default connect(msp, mdp)(Browse);

@@ -11,6 +11,10 @@ class Browse extends React.Component {
         this.props.fetchVideos();
     }
 
+    componentWillUnmount() {
+        this.props.clearVideos();
+    }
+
     render() {
         const listItems1 = this.props.videos.slice(0, 4)
         const listItems2 = this.props.videos.slice(4, 9)
