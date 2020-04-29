@@ -10,6 +10,16 @@ class VideoIndexItem extends React.Component {
         this.showThumbnail = this.showThumbnail.bind(this);
     }
 
+    getGenreNames() {
+        const { video, genres } = this.props;
+
+        let genreNames = video.genreIds.map(id => (
+            genres[id].name
+        )).slice(0, 3);
+
+        return genreNames.join(" • ");
+    }
+
     playVideo(e) {
         e.currentTarget.play();
     }
