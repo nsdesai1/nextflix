@@ -9,3 +9,6 @@ Nextflix is a clone of Netflix, the widely popular application used for video br
 ### Key Features
 
 [Nextflix Design Documents](https://github.com/nsdesai1/nextflix/wiki)
+
+
+### Functionality and MVPs
