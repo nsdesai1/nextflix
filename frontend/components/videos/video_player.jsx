@@ -18,11 +18,35 @@ class VideoPlayer extends React.Component {
     }
     
     componentDidMount() {
-        // if ((isEmpty(this.props.video) || this.props.video === undefined) && this.props.type === "fullPlayer") {
-        if (this.props.type === "fullPlayer") {
+        if (this.props.type === "full") {
           this.props.fetchVideo(this.props.match.params.mediaId);
         }
     }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.type === "full" && prevProps.match.params.mediaId !== this.props.match.params.mediaId) {
+          this.props.fetchVideo(this.props.match.params.mediaId);
+        }
+    }
+
+    componentWillUnmount() {
+        clearTimeout(this.clearArrow);
+    }
+    
+    handleMouse(e) {
+        e.preventDefault();
+    
+        this.setState({
+          mouseMoving: true
+        });
+    
+        let showArrow = () => {
+          clearTimeout(this.clearArrow);
+          this.clearArrow = setTimeout(() => this.setState({ mouseMoving: false }), 3500);
+        };
+    
+        showArrow();
+    }
 }
 
-export default VideoPlayer
+export default VideoPlayer;
