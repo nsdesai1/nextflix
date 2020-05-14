@@ -17,13 +17,13 @@ class VideoPlayer extends React.Component {
     }
     
     componentDidMount() {
-        if (this.props.type === "full") {
+        if (this.props.type === "fullPlayer") {
           this.props.fetchVideo(this.props.match.params.mediaId);
         }
     }
 
     componentDidUpdate(prevProps) {
-        if (this.props.type === "full" && prevProps.match.params.mediaId !== this.props.match.params.mediaId) {
+        if (this.props.type === "fullPlayer" && prevProps.match.params.mediaId !== this.props.match.params.mediaId) {
           this.props.fetchVideo(this.props.match.params.mediaId);
         }
     }
@@ -142,7 +142,6 @@ class VideoPlayer extends React.Component {
         return video ? (
           <div className={`mini-video-player ${visibility}`}>
             <video
-              // src="https://media.w3.org/2010/05/sintel/trailer.mp4"
               src={video.url}
               autoPlay={visibility === "invisible" ? false : true}
               muted={true}
