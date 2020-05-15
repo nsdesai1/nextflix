@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoIndexItemContainer from '../videos/video_index_item_container';
+import VideoItemContainer from './video_item_container';
 
 class VideoList extends React.Component {
     constructor(props) {

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import VideoIndexItem from './video_index_item';
+import VideoItem from './video_item';
 
 const mSTP = state => ({
     genres: state.entities.genres
@@ -9,4 +9,4 @@ const mDTP = dispatch => ({
 
 })
 
-export default connect(mSTP, mDTP)(VideoIndexItem);
+export default connect(mSTP, mDTP)(VideoItem);
