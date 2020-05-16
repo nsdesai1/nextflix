@@ -64,28 +64,28 @@ export default class VideoItem extends React.Component {
 
     let dropdownArrow = "";
     if (!isCurrentItem) {
-      if (type === "search") {
-        dropdownArrow = <Link to={`/search/${params.query}/${myRow}/${video.id}`} className="background-link" >
-          <div className="background-down-arrow">
-            <i className="fas fa-chevron-down"></i>
-          </div>
-        </Link>;
-      } else if (type === "my-list") {
-        dropdownArrow = <Link to={`/browse/my-list/${myRow}/${video.id}`} className="background-link" >
-          <div className="background-down-arrow">
-            <i className="fas fa-chevron-down"></i>
-          </div>
-        </Link>;
-      } else {
-        let route;
+    //   if (type === "search") {
+    //     dropdownArrow = <Link to={`/search/${params.query}/${myRow}/${video.id}`} className="background-link" >
+    //       <div className="background-down-arrow">
+    //         <i className="fas fa-chevron-down"></i>
+    //       </div>
+    //     </Link>;
+    //   } else if (type === "my-list") {
+    //     dropdownArrow = <Link to={`/browse/my-list/${myRow}/${video.id}`} className="background-link" >
+    //       <div className="background-down-arrow">
+    //         <i className="fas fa-chevron-down"></i>
+    //       </div>
+    //     </Link>;
+    //   } else {
+    //     let route;
 
-        if (type === "SHOWS") {
-          route = "/browse/genre/shows";
-        } else if (type === "MOVIES") {
-          route = "/browse/genre/movies";
-        } else {
-          route = "/browse";
-        }
+    //     if (type === "SHOWS") {
+    //       route = "/browse/genre/shows";
+    //     } else if (type === "MOVIES") {
+    //       route = "/browse/genre/movies";
+    //     } else {
+    //       route = "/browse";
+    //     }
 
         dropdownArrow = <Link className="background-link" >
           <div className="background-down-arrow">
@@ -93,7 +93,7 @@ export default class VideoItem extends React.Component {
           </div>
         </Link>
       }
-    }
+    
 
     let details = backgroundDetails ? (
       <section className="background-details-container">
