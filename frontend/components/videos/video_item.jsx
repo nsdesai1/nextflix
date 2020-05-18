@@ -105,7 +105,6 @@ export default class VideoItem extends React.Component {
     return (
       <li className={`${className}`} onMouseEnter={this.showBackgroundDetails(true)} onMouseLeave={this.showBackgroundDetails(false)}>
         <img className="video-demo-thumbnail visible" src={video.thumbnail} />
-        {/* <img className="video-demo-thumbnail visible" src={window.demoThumbnail} /> */}
         {details}
       </li>
     );
@@ -119,7 +118,6 @@ export default class VideoItem extends React.Component {
       this.props.playVideo(e);
     }, 400);
 
-    // this.props.playVideo(e);
   }
 
   handleMouseLeave(e) {
@@ -157,13 +155,11 @@ export default class VideoItem extends React.Component {
         {(detailsHidden.id !== video.id) ? (
           <>
             <img className="video-demo-thumbnail visible" src={video.thumbnail}/>
-            {/* <img className={`video-demo-thumbnail visible`} src={window.demoThumbnail} />  */}
             <VideoPlayerContainer video={video} type="miniplayer" visibility="invisible" />
           </>
         ) : (
           <>
             <img className="video-demo-thumbnail visible" src={video.thumbnail} />
-            {/* <img className={`video-demo-thumbnail invisible`} src={window.demoThumbnail} /> */}
             <VideoPlayerContainer video={video} type="miniplayer" visibility="visible" />
           </>
         )}
