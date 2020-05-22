@@ -28,6 +28,36 @@ class VideoRow extends React.Component {
           showButtonArrow: !this.state.showButtonArrow
         });
       }    
+
+      scrollLeft(e) {
+        e.preventDefault();
+        const { pageNum, videosRemaining, showButtonArrow } = this.state;
+    
+        this.setState({
+          pageNum: pageNum-1,
+          videosRemaining: videosRemaining + 6,
+          showButtonArrow: pageNum === 0 ? false : showButtonArrow
+        });
+      }
+    
+      scrollRight(e) {
+        e.preventDefault();
+        const { pageNum, videosRemaining } = this.state;
+        let newVideosRemaining = videosRemaining-6;
+        let newPageNum;
+    
+        if (newVideosRemaining <= 0) {
+          newPageNum = 0;
+          newVideosRemaining = this.props.videos.length;
+        } else {
+          newPageNum = pageNum+1;
+        }
+    
+        this.setState({
+          pageNum: newPageNum,
+          videosRemaining: newVideosRemaining
+        });
+      }
 }
 
 export default VideoRow;
