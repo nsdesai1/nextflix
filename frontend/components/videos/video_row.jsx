@@ -105,6 +105,35 @@ class VideoRow extends React.Component {
           }
         };
       }
+
+      closeDetails(closePressed) {
+        this.setState({
+          detailsHidden: {id: null, value: true}
+        });
+    
+        // DO THIS ONLY IF CLOSE BUTTON IS PRESSED
+        if (closePressed === undefined || closePressed === "closing") {
+          setTimeout(() => {
+            this.props.history.push("/browse");
+          }, 600);
+        } else if (closePressed === "closing-search") {
+          setTimeout(() => {
+            this.props.history.push(`/search/${this.props.match.params.query}`);
+          }, 600);
+        } else if (closePressed === "closing-shows") {
+          setTimeout(() => {
+            this.props.history.push(`/browse/genre/shows`);
+          }, 600);
+        } else if (closePressed === "closing-movies") {
+          setTimeout(() => {
+            this.props.history.push(`/browse/genre/movies`);
+          }, 600);
+        } else if (closePressed === "closing-list") {
+          setTimeout(() => {
+            this.props.history.push(`/browse/my-list`);
+          }, 600);
+        } 
+      }
 }
 
 export default VideoRow;
