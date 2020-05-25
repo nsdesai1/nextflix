@@ -1,7 +1,7 @@
 import React from 'react';
 import VideoItemContainer from './video_item_container';
 
-class VideoList extends React.Component {
+class VideoIndex extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -14,7 +14,7 @@ class VideoList extends React.Component {
                     {
                         this.props.vids.map(video => {
                             return (
-                                <VideoIndexItemContainer 
+                                <VideoItemContainer 
                                     key={video.id}
                                     title={video.title}
                                     description={video.description}
@@ -34,4 +34,4 @@ class VideoList extends React.Component {
     }
 }
 
-export default VideoList;
+export default VideoIndex;
