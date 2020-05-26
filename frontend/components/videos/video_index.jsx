@@ -1,37 +1,27 @@
 import React from 'react';
-import VideoItemContainer from './video_item_container';
+import VideoMainContainer from './video_main_container';
+import VideoRowContainer from './video_row_container';
+import { isEmpty } from 'lodash';
 
 class VideoIndex extends React.Component {
     constructor(props) {
         super(props);
-    }
-
-    render() {
-        return (
-            <div>
-                <h2 className="genre-title">{this.props.genre}</h2>
-                <section className="row-container">
-                    {
-                        this.props.vids.map(video => {
-                            return (
-                                <VideoItemContainer 
-                                    key={video.id}
-                                    title={video.title}
-                                    description={video.description}
-                                    media_type={video.media_type}
-                                    duration={video.duration}
-                                    rating={video.rating}
-                                    year={video.year}
-                                    trailer={video.trailer}
-                                    thumbnail={video.thumbnail}
-                                />
-                            )
-                        })
-                    }
-                </section>
-            </div>
-        )
-    }
+      }
+    
+      componentDidMount() {
+        this.props.fetchVideos();
+      }
+    
+      componentDidUpdate(prevProps) {
+        if (isEmpty(this.props.videos) || 
+          Object.keys(this.props.videos).length === 1 || 
+          prevProps.location.pathname.startsWith("watch")
+        ) this.props.fetchVideos();
+      }
+    
+      componentWillUnmount() {
+        this.props.clearVideos();
+      }
 }
 
 export default VideoIndex;
