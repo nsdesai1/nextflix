@@ -1,3 +1,4 @@
+import React from 'react';
 import VideoPlayerContainer from './video_player_container';
 import { Link } from 'react-router-dom';
 
@@ -134,7 +135,7 @@ export default class VideoItem extends React.Component {
     let videoDetails = (
       <section className="thumbnail-details-container">
         <div className="thumbnail-details">
-          <Link to={}>
+          <Link>
             <div className="details-play-icon"><i className="far fa-play-circle"></i></div>
           </Link>
           <h3>{video.title}</h3>
