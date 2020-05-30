@@ -1,0 +1,140 @@
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 400ms linear;
+    transition-delay: 400ms;
+  }
+  
+  .invisible {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 400ms;
+    transition: visibility 2s 2s, opacity 400ms linear;
+  }
+  
+  /* ------- FULL VIDEO PLAYER ------- */
+  
+  .full-video-player {
+    position: absolute;
+    display: flex;
+  
+    -webkit-animation: fadein 800ms; /* Safari, Chrome */	
+    -moz-animation: fadein 800ms; /* Firefox*/	
+    -ms-animation: fadein 800ms; /* Internet Explorer */	
+    -o-animation: fadein 800ms; /* Opera */	
+    animation: fadein 800ms;
+  }
+  
+  @keyframes fadein {	
+    from { opacity: 0.8; }
+    to   { opacity: 1; }
+  }
+  
+  /* Firefox */	
+  @-moz-keyframes fadein {	
+    from { opacity: 0.8; }
+    to   { opacity: 1; }
+  }	
+  
+  /* Safari, Chrome */	
+  @-webkit-keyframes fadein {	
+    from { opacity: 0.8; }
+    to   { opacity: 1; }
+  }
+  
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+    from { opacity: 0.8; }
+    to   { opacity: 1; }
+  }
+  
+  /* Opera */
+  @-o-keyframes fadein {
+    from { opacity: 0.8; }
+    to   { opacity: 1; }
+  }
+  
+  .full-video-player-video {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+  
+  .full-video-player a {
+    z-index: 1;
+    text-decoration: none;
+  }
+  
+  .full-video-player .links .button-link {
+    margin-right: 10%;
+  }
+  
+  .full-video-player .links {
+    z-index: 1;
+    display: flex;
+    margin: 2.5vw;
+    align-items: center;
+  }
+  
+  .full-video-player .links .back {
+    font-size: 4vh;
+    color: white;
+    background-color: transparent;
+    width: fit-content;
+  }
+  
+  .full-video-player .links .a-link {
+    font-size: 2vh;
+    color: white;
+    text-decoration: none;
+    min-width: fit-content;
+    font-weight: bold;
+  }
+  
+  .full-video-player .links:hover {
+    cursor: pointer;
+  }
+  
+  /* ------- MAIN VIDEO PLAYER ------- */
+  
+  .main-video-player {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 56vw;
+    z-index: -1;
+  }
+  
+  .main-video-player-video {
+    width: 100%;
+    height: 56vw;
+  }
+  
+  /* ------- MINI VIDEO PLAYER ------- */
+  
+  .mini-video-player {
+    width: 100%;
+    min-height: 9vw;
+    z-index: -1;
+    position: absolute;
+    max-height: 9vw;
+    background-color: black;
+  }
+  
+  .mini-video-player-video {
+    width: 100%;
+    min-height: 9vw;
+    max-height: 9vw;
+  }
+  
+  .empty-video-div {
+    height: 100%;
+    width: 100%;
+  }

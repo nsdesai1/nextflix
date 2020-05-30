@@ -10,7 +10,7 @@ import {
 import LogInFormContainer from './session_form/login_form_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import SplashContainer from './splash/splash_container';
-import BrowseContainer from './browse/browse_container';
+import VideoIndexContainer from './videos/video_index_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import NavbarContainer from './navbar/navbar_container'
 
@@ -24,7 +24,7 @@ const App = () => (
       <AuthRoute exact path='/' component={SplashContainer} />
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-      <ProtectedRoute exact path="/browse" component={BrowseContainer}/>
+      <ProtectedRoute exact path="/browse" component={VideoIndexContainer}/>
     </Switch>
   </div>
 );

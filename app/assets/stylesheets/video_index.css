@@ -1,0 +1,118 @@
+.video-index-container {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    -webkit-animation: fadein 1s; /* Safari, Chrome */	
+    -moz-animation: fadein 1s; /* Firefox*/	
+    -ms-animation: fadein 1s; /* Internet Explorer */	
+    -o-animation: fadein 1s; /* Opera */	
+    animation: fadein 1s;
+  }
+  
+  /* ------- BELOW MAIN VIDEO ------- */
+  
+  /* need this to allow the video-row-container to have something to position against */
+  #video-main-empty {
+    width: 100%;
+    height: 48vw;
+    content: "";
+    z-index: -1;
+  }
+  
+  .video-row-container {
+    position: relative;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ------- VIDEO ROW ------- */
+  
+  .individual-row-container {
+    margin-bottom: 3.5%;
+  }
+  
+  .individual-row-container:last-child {
+    margin-bottom: 6%;
+  }
+  
+  .individual-search-row-container, .individual-my-list-row-container {
+    margin-bottom: 4.5%;
+  }
+  
+  .video-row-genre {
+    padding-left: 3.15%;
+    margin-bottom: 0.8%;
+    font-weight: bold;
+    font-size: 1.4vw;
+    letter-spacing: 0.02em;
+    color: #e5e5e5;
+    font-family: sans-serif;
+  }
+  
+  .video-row-outer {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    padding: 0 3%;
+    max-height: 9vw;
+  }
+  
+  .video-row-inner {
+    display: flex;
+    overflow-x: visible;
+    width: 100%;
+    position: relative;
+  }
+  
+  .video-demo-thumbnail {
+    z-index: -1;
+    width: 100%;
+    min-height: 9vw;
+    object-fit: cover;
+    max-height: 9vw;
+  }
+  
+  /* move all the thumbnails to the left */
+  .video-row-inner:hover .video-item {
+     transform: translate3d(-45%, 0, 0);
+     transition-delay: 400ms;
+  }
+  
+  /* move all the thumbnails to the right */
+  .video-item:hover ~ .video-item {
+     transform: translate3d(45%, 0, 0);
+     transition-delay: 400ms;
+  }
+  
+  /* ------- BUTTONS ------- */
+  
+  .row-button {
+    position: absolute;
+    z-index: 4;
+    width: 3%;
+    background-color: rgba(0, 0, 0, 0.35);
+    font-size: 2.7vw;
+    color: rgba(255,255,255,0.9);
+  }
+  
+  .left.row-button {
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .right.row-button {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .row-button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
