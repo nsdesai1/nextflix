@@ -12,3 +12,9 @@ Nextflix is a clone of Netflix, the widely popular application used for video br
 
 
 ### Functionality and MVPs
+
+1. User Auth
+
+2.  Display Videos
+
+3. Genre-specific rows
