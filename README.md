@@ -19,4 +19,3 @@ Nextflix is a clone of Netflix, the widely popular application used for video br
 
 3. Genre-specific rows
 
-
